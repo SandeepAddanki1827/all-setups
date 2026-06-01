@@ -1,9 +1,9 @@
 #! /bin/bash
 #Launch an instance with 9000 and t2.medium
 cd /opt/
-wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.6.50800.zip
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.0.0.45539.zip
 unzip sonarqube-8.9.6.50800.zip
-yum install java-17-amazon-corretto -y
+yum install java-21-amazon-corretto -y
 useradd sonar
 chown sonar:sonar sonarqube-8.9.6.50800 -R
 chmod 777 sonarqube-8.9.6.50800 -R
